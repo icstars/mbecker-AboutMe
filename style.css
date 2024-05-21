@@ -36,6 +36,6 @@ a {
 }
 
 a:hover {
-  background-color: black;
-  border: 5px solid red;
+  background-color: orange;
+  border: 5px solid purple;
 }
