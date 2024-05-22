@@ -1,6 +1,6 @@
-img {
+/* img {
   width: 1000px;
-}
+} */
 
 body {
   background-color: wheat;
@@ -38,4 +38,62 @@ a {
 a:hover {
   background-color: orange;
   border: 5px solid purple;
+}
+
+.slider:nth-child(1) {
+  animation: slideIn 1s;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    background-color: purple;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: palevioletred;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: salmon;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes image {
+  from {
+    background-image: url("images/download.jpg");
+  }
+
+  to {
+    background-image: url("images/IMG_3405.jpg");
+  }
+}
+
+.images {
+  animation: image 5s;
+  animation-iteration-count: infinite;
+  height: 1000px;
+  width: 500px;
 }
