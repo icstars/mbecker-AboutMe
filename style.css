@@ -93,7 +93,7 @@ div {
 
 .images {
   animation: image 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: initial;
   height: 1000px;
   width: 500px;
 }
