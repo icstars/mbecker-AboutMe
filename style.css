@@ -97,3 +97,74 @@ div {
   height: 1000px;
   width: 500px;
 }
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Navbar</title>
+    <style>
+      nav {
+        background-color: #333;
+      }
+ 
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+ 
+      nav li {
+        float: left;
+      }
+ 
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+ 
+      /* Keyframes animation */
+      @keyframes slideRight {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+ 
+      /* Media query for smaller screens */
+      @media screen and (max-width: 600px) {
+        nav ul {
+          width: 100px; /* Adjust width as needed */
+          position: ;
+          top: 0;
+          right: 480;
+          height: 100%;
+          flex-direction: column; /* Make it vertical */
+        }
+        ul {
+          right: 100%;
+        }
+ 
+        nav li {
+          float: none; /* Remove float for vertical layout */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
